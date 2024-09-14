@@ -21,7 +21,7 @@ func main() {
 	http.HandleFunc("/ajuda", ajudaHandler)
 
 	// Inicia o servidor web na porta 8080
-	fmt.Println("Servidor rodando em http://localhost:8080")
+	fmt.Println("Servidor rodando em http://<localhost ou ip da máquina>:8080")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		fmt.Println("Erro ao iniciar o servidor:", err)
